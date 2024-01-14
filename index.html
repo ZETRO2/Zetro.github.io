@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2b05088d83.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I'm <span>Lorenzo</span><br />From Hong Kong</h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------About me------------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./Avatar2.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm Lorenzo Chan, a high school student with a deep passion for coding and web development. Over the past
+            five years, I've honed my skills, specializing in creating full-stack websites. I thrive on challenges and
+            am known for my ability to quickly learn new technologies. My commitment to continuous learning keeps me at
+            the forefront of the ever-evolving tech world. I'm excited about the endless possibilities that coding
+            offers and am eager to embark on new learning journeys.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span>
+                <p>Designing Web interfaces</p>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li><span>5 Years Coding Experience</span>
+                <p>5 years coding experience and know 6 coding languages</p>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li><span>Backend Web Development</span>
+                <p>Build backend of websites using Java</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="achievements">
+            <ul>
+              <li><span>STEM Award </span>
+                <p>Awarded best STEM award in secondary</p>
+              </li>
+              <li><span>UBC engineering program</span>
+                <p>completed the rigorous UBC engineering program and got a
+                  Certificate</p>
+              </li>
+              <li><span>Experience</span>
+                <p>Proficient in coding with 5 years of experience; currently learning Java
+                  alongside university students.</p>
+              </li>
+              <li><span>TEDU Java Program</span><br />Completed phase 1 of the (Tedu.cn) Java program that takes 460
+                hours to complete.</li>
+              <li><span>ScholarShip</span><br />Awarded the highest Scholar-Ship in the entire secondary</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br />Canada</li>
+              <li><span>2022-2023</span><br />China</li>
+              <li><span>2014-2022</span><br />Hong Kong</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------Languages------------------------------ -->
+  <div id="languages">
+    <div class="container">
+      <h1 class="sub-title">My coding Languages</h1>
+      <div class="languages-list">
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>JAVA</h2>
+          <p>Java is a versatile, object-oriented programming language known for its portability and wide usage in
+            building diverse applications across different platforms.</p>
+          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-python"></i>
+          <h2>Python</h2>
+          <p>Python is a high-level, versatile programming language renowned for its readability and simplicity, favored
+            for its wide range of applications from web development to data analysis.</p>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>HTML</h2>
+          <p>HTML (Hypertext Markup Language) is a standard language used for creating and structuring the content of
+            web pages by using a system of tags to define elements such as headings, paragraphs, links, and images.</p>
+          <a href="https://en.wikipedia.org/wiki/HTML">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-css3-alt"></i>
+          <h2>CSS</h2>
+          <p>CSS (Cascading Style Sheets) is a stylesheet language utilized to control the visual presentation and
+            layout of HTML elements in web pages, enhancing their aesthetics and design.</p>
+          <a href="https://en.wikipedia.org/wiki/CSS">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-square-js"></i>
+          <h2>JavaScript</h2>
+          <p>JavaScript is a versatile programming language primarily used for adding interactivity, dynamic behavior,
+            and complex functionality to web pages, making them more engaging and responsive.</p>
+          <a href="https://en.wikipedia.org/wiki/JavaScript">Learn more</a>
+        </div>
+        <div>
+          <i class="c++"><img src="./plus_logo_c_icon_214621.png"></i>
+          <h2>C++</h2>
+          <p>C++ is a powerful, object-oriented programming language widely employed for developing efficient software
+            and systems, offering both high-level abstractions and low-level memory manipulation capabilities.</p>
+          <a href="https://en.wikipedia.org/wiki/C%2B%2B">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------Projects------------------------------ -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+        <div class="projects">
+          <img src="./work1.png">
+          <div class="layer">
+            <h3>Hallowin BlackJack</h3>
+            <p>Elevate your Halloween festivities with Hallowin Blackjack, where spooky fun meets the thrill of the
+              casino, making every hand a hauntingly entertaining experience!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="./work2.png">
+          <div class="layer">
+            <h3>RETRO GAMES</h3>
+            <p>Dive into the nostalgic world of retro gaming on my website, where pixelated adventures, timeless
+              classics, and gaming history come to life for fellow enthusiasts and nostalgia seekers alike.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="./work3.png">
+          <div class="layer">
+            <h3>Tropical Chess Board</h3>
+            <p>Immerse yourself in a strategic paradise with our Tropical Chess Board, where every move is a step
+              towards victory amidst the lush beauty of a sun-soaked battleground.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------contact------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> lchan3201@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 778-791-2388</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
